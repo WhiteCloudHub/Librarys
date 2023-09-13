@@ -187,11 +187,27 @@ function Slycer:CreateWindow(GameName)
 	Info_1.BorderSizePixel = 0
 	Info_1.Size = UDim2.new(0, 79,0, 18)
 	Info_1.Font = Enum.Font.Code
-	Info_1.Text = GameName.." | Public | V0.1"
+	Info_1.Text = GameName.." | Public | V0.1 | "
 	Info_1.TextColor3 = Color3.fromRGB(200,200,200)
 	Info_1.TextSize = 13
 	Info_1.TextStrokeTransparency = 0
 	Info_1.TextXAlignment = Enum.TextXAlignment.Left
+	
+	local lastUpdateTime = tick()
+	local frameCount = 0
+
+	local function updateFPS()
+		frameCount = frameCount + 1
+		local currentTime = tick()
+		if currentTime - lastUpdateTime >= 1 then
+			local fps = frameCount / (currentTime - lastUpdateTime)
+			Info_1.Text = GameName.." | Public | V0.1 | "..math.floor(fps).." Fps"
+			lastUpdateTime = currentTime
+			frameCount = 0
+		end
+	end
+
+	game:GetService("RunService").Heartbeat:Connect(updateFPS)
 	
 	UIPadding_13.Parent = Info_1
 	UIPadding_13.PaddingLeft = UDim.new(0,9)
