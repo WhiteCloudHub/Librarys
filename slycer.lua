@@ -172,7 +172,7 @@ function Slycer:CreateWindow(GameName)
 	InfoBar_1.Name = "InfoBar"
 	InfoBar_1.Parent = Main_1
 	InfoBar_1.AutomaticSize = Enum.AutomaticSize.X
-	InfoBar_1.BackgroundColor3 = Color3.fromRGB(37,37,37)
+	InfoBar_1.BackgroundColor3 = Color3.fromRGB(35,35,35)
 	InfoBar_1.BorderColor3 = Color3.fromRGB(0,0,0)
 	InfoBar_1.BorderSizePixel = 0
 	InfoBar_1.Position = UDim2.new(0, 0,-0.0549999997, 0)
@@ -231,7 +231,7 @@ function Slycer:CreateWindow(GameName)
 
 	KBTopBar_1.Name = "KBTopBar"
 	KBTopBar_1.Parent = KeyBindsHolder_1
-	KBTopBar_1.BackgroundColor3 = Color3.fromRGB(37,37,37)
+	KBTopBar_1.BackgroundColor3 = Color3.fromRGB(35,35,35)
 	KBTopBar_1.BorderColor3 = Color3.fromRGB(0,0,0)
 	KBTopBar_1.BorderSizePixel = 0
 	KBTopBar_1.Size = UDim2.new(0, 172,0, 21)
@@ -316,7 +316,7 @@ function Slycer:CreateWindow(GameName)
 
 	PlayerTopBar_1.Name = "PlayerTopBar"
 	PlayerTopBar_1.Parent = PlayerHolder_1
-	PlayerTopBar_1.BackgroundColor3 = Color3.fromRGB(37,37,37)
+	PlayerTopBar_1.BackgroundColor3 = Color3.fromRGB(35,35,35)
 	PlayerTopBar_1.BorderColor3 = Color3.fromRGB(0,0,0)
 	PlayerTopBar_1.BorderSizePixel = 0
 	PlayerTopBar_1.Size = UDim2.new(0, 172,0, 21)
